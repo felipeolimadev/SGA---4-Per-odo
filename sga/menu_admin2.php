@@ -28,16 +28,16 @@
   <ul class="dropdown-menu">
   
     <li class="dropdown-header"> <i class="fas fa-users"></i> Alunos</li>
-    <li><a href="cadastro_aluno.php">Cadastro de alunos</a></li>
-    <li><a href="gerenciar_alunos.php">Gerenciar Alunos</a></li>
+    <li><a href="aluno/cadastro_aluno.php">Cadastro de alunos</a></li>
+    <li><a href="aluno/gerenciar_alunos.php">Gerenciar Alunos</a></li>
     <li role="separator" class="divider"></li>
     <li class="dropdown-header"> <i class="fas fa-file-contract"></i> Turmas</li>
-    <li><a href="cadastro_turma.php">Cadastro de turmas</a></li>
-    <li><a href="gerenciar_turmas.php">Gerenciar Turmas</a></li>
+    <li><a href="turma/cadastro_turma.php">Cadastro de turmas</a></li>
+    <li><a href="turma/gerenciar_turmas.php">Gerenciar Turmas</a></li>
     <li role="separator" class="divider"></li>
     <li class="dropdown-header"> <i class="fas fa-graduation-cap"></i> Cursos</li>
-    <li><a href="cadastro_curso.php">Cadastro de cursos</a></li>
-    <li><a href="gerenciar_cursos.php">Gerenciar Cursos</a></li>
+    <li><a href="curso/cadastro_curso.php">Cadastro de cursos</a></li>
+    <li><a href="curso/gerenciar_cursos.php">Gerenciar Cursos</a></li>
   </ul>
 
 

@@ -34,11 +34,7 @@
 					<i class="fas fa-graduation-cap"></i> Curso:<label for="curso">  </label> 
 					
                                         <?php
-                                            $servidor = 'localhost';
-                                            $bd       = 'sga';
-                                            $usuario  = 'root';
-                                            $senha    = 'root';
-                                            $con = mysqli_connect($servidor, $usuario, $senha, $bd);
+                                            include"../conexao.php";
 
                                             $sql = 'SELECT * FROM curso ORDER BY nome';
                                             $resultado = mysqli_query($con, $sql) ;
