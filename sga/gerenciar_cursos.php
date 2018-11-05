@@ -65,11 +65,7 @@
             <tbody>
             <?php
               	
-                $servidor = 'localhost';
-                $bd       = 'sga';
-                $usuario  = 'root';
-                $senha    = 'root';
-                $con = mysqli_connect($servidor, $usuario, $senha, $bd);
+                include"../conexao.php";
 
                 $sql = 'SELECT * FROM curso ORDER BY cod_curso';
                 $resultado = mysqli_query($con, $sql) ;
