@@ -1,0 +1,141 @@
+.topo{
+    background-color:#00a4ec;
+    text-align: center;
+    color:#000000;
+    font-weight: bold;
+    font-size: 30px;
+    height: 100px;
+    border: solid 1px #000;
+}
+
+.Geral {
+	width: 150px;
+	height: 100px;
+	font-size: 18px;
+	color: #FFF;
+
+
+}
+.Geral a{
+	font-size: 15px;
+	
+}
+#painel{
+	margin:0 auto;
+	
+}
+
+#img {
+    float: left;
+	margin:10px;
+    width: 190px;
+    height: 100px;
+    
+    cursor: hand;
+    background-image:url url( url(file:///C|/wamp/www/projeto%20unipac/css/img/logo%20unipac_cap.png));
+    background-repeat: no-repeat;
+}
+#superior {
+    float: left;
+    width: 1005px;
+    height: 60px;
+}
+#inferior {
+    float: left;
+    width: 1005px;
+    height: 60px;
+
+}
+
+
+
+.img{
+    float: left;   
+    
+}
+
+img{
+    height: 30px;
+    width: 250px;
+    height: 250px;
+     
+}
+
+p{
+    text-indent: 2em;
+    text-align: justify;
+}
+
+pi{
+    text-align: justify;
+    text-indent: 3em;
+    font-size: 16px;
+}
+
+.Corpo{
+    background-color:#ffffff;
+   
+    font-weight: bold;
+    font-size: 15px;
+    height: 600px;
+    border-left: solid 1px #c0d619;
+    border-right: solid 1px #c0d619;
+}
+
+.body{
+	background-image:url(img/fundounipac2.jpg);
+	background-attachment:fixed;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:#000;
+
+}
+
+
+.footer{
+    background-color:#00a4ec;
+    background-image: url(marca.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 15px;
+    height: 15px;
+    border: solid 1px #c0d619;
+    border-top: 0px;
+    width: 100%;
+ 
+}
+
+
+.Menu{
+    background-color:#0b4271;
+    color:#000000;
+    font-weight: bold;
+    font-size: 30px;
+    height: 30px;
+    border: solid 1px #2BA470;
+}
+
+
+.ItemMenu{
+    background-color:#0b4271;
+    color:#000000;
+    font-weight: bold;
+    font-size: 15px;
+    height: 85%;
+    float: left;
+    margin: 1px;
+    padding-left: 5px;
+    border: solid 2px #637858;
+    width: 20%;
+	
+}
+
+iframe{
+    width: 99.6%;
+    margin-left: 1px;
+    border: 0;
+    background-color: #ffffff;
+    height: 100%;
+}

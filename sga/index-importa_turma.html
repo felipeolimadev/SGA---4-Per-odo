@@ -1,0 +1,55 @@
+﻿<!-- https://www.youtube.com/watch?v=PMUSvfo6S7w - importanddo aqruivos cvs-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SGA.: Importar Turmas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="../CAPTAÇÃOONLINE/importar_csv/style.css">
+<link href="img/fd.png" rel="shortcut icon" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<div class="jumbotron">
+  
+  <h2 style="margin-top:-15px " style="color:black" align="center">Upload CSV - Turmas</h2>
+  <br>
+  <form action="importarvalor_curso.php" method="post" enctype="multipart/form-data">
+    
+    	<div class="checkbox">
+      	<label><input type="file" name="file"> </label>
+    	</div>
+    	<button type="submit" class="btn btn-default">Importar</button>
+  </form>
+  <br>
+  <p><span style="color: red;"><b>PASSO-A-PASSO PARA IMPORTAÇÃO DE TURMAS AO SGA::</b></span> <br>
+    
+    <b>1º Passo)</b>  Na primeira linha do seu excel, coloque os títulos de cada coluna de acordo com a sequência dos campos abaixo:
+    <br>
+   
+    
+   "Letra; Periodo;Curso; Ano; Semestre &quot;
+     <br>
+    <br>
+   
+  <b>2º Passo)</b> Ajuste os dados dos alunos de acordo com as seguintes regras:
+   <br>
+    Não pode conter os caracteres "( ) - /" ou qualquer outro caracter.
+     <br><br>
+    
+    <b>3º Passo)</b> Após a finalização do preenchimento e ajuste dos campos conforme instruções, é necessário exportar o arquivo excel no formato CSV. <br> Para isto clique em SALVAR COMO e no campo TIPO selecione a opção CSV (MS-DOS) (*.csv) e salve o arquivo em seu computador. Em seguida, abra o arquivo CSV no seu BLOCO DE NOTAS, exclua a primeira linha com os títulos dos campos exportados, salve e feche o arquivo; <br><br>
+    
+    <b>4º Passo)</b> Para concluir a importação dos alunos, no campo ARQUIVO DE IMPORTAÇÃO acima clique em ESCOLHER ARQUIVO e busque em seu computador o arquivo CSV que acabou de criar. <br>Agora, é só clicar no botão IMPORTAR e pronto!
+    
+    
+  </p>
+</div>
+  
+</div>
+
+</body>
+</html>

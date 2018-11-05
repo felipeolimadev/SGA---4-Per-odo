@@ -1,0 +1,158 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+overflow: hidden;
+}
+
+
+body{
+background:#fff;	
+}
+
+#logo{
+width: 200px;
+height: 100px;
+margin: auto;		
+}
+
+#logo img{
+width: 200px;
+height: 100px;	
+}
+
+#caixa-login{
+background: #ccc;
+    width: 450px;
+    height: 663px;
+    float: right;
+    padding: 42px 0 0 17px;
+    margin: -659px 0 0 104px;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+
+}
+#caixa-login table{
+	font:15px Arial, Arial, Helvetica, sans-serif;
+	color:#666;
+	margin: 40px 10px 10px 10px;
+}
+#caixa-login h1{
+	
+	font:15px Arial, Arial, Helvetica, sans-serif;
+	color: #00F;
+	margin: 10px 0 0 0;
+}
+
+#caixa-login input{
+	font:15px Arial, Arial, Helvetica, sans-serif;
+	color: #00F;
+	heigth: 25px;
+	padding:10px;
+	width:400px;
+	border: 1px solid #CCC;
+	margin-top: 30px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+#caixa-login .input{
+	font:15px Arial, Arial, Helvetica, sans-serif;
+	color:#FFF;
+	heigth: 40px;
+	padding:10px;
+	background: #00F;
+	cursor:pointer;
+	width:80px;
+	border: 1px solid #CCC;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+#caixa-login h2{
+	font:15px Arial, Arial, Helvetica, sans-serif;
+	color:#FFF;
+	background:#00F;
+	text-align:center;
+	padding:5px;
+	float: left;
+	margin: 28px 0 10px 10px;
+	border: 1px solid #CCC;
+		
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+.slider-wrapper {
+    display: block;
+    width: 100%;
+    /* float: left; */
+    height: 658px;
+    background: grey;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider-wrapper .slide-top,
+.slider-wrapper .slide-bottom {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-top {
+  background: url('http://redes.moderna.com.br/wp-content/uploads/2016/06/post-tonia.png') center center;
+  background-size: cover;
+}
+.slide-bottom {
+  background: url('http://sistema.unipac.br/ad/assets/css/background.jpg') center center;
+  background-size: cover;
+  
+  -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-name: fadeImages;
+          animation-name: fadeImages;
+}
+
+@-webkit-keyframes fadeImages {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  
+  50% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+@keyframes fadeImages {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  
+  50% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}

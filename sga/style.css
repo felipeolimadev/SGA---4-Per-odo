@@ -1,0 +1,55 @@
+element.style {
+}
+user agent stylesheet
+strong, b {
+    font-weight: bold;
+}
+user agent stylesheet
+big {
+    font-size: larger;
+}
+.Label {
+    font-family: arial;
+    font-size: 12px;
+    color: #000000;
+    TEXT-DECORATION: none;
+}
+.centraliza {
+    TEXT-ALIGN: center;
+}
+user agent stylesheet
+table {
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    font-variant: normal;
+}
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+user agent stylesheet
+table {
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    font-variant: normal;
+}
+user agent stylesheet
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
