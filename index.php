@@ -49,7 +49,7 @@
 						<p>
 							<font face="Tahoma" size="4px" color="f00" float="left">
 								<?php
-									include('conexao.php');
+									include"conexao.php";
 									$meses = array (1 => "Janeiro", 
 													2 => "Fevereiro", 
 													3 => "Março", 
@@ -108,11 +108,7 @@
 
 		</form>
 		<?php include_once("rodape.php");?>
-		<!---
-<?php //include_once("seguranca.php");?>
-
--->
-
+		
 
 
 
@@ -129,7 +125,7 @@ if(isset($_POST['button'])){
         } else{
 			$sql = "SELECT * FROM  login WHERE 	code = '$code' AND senha = '$password'";
 			
-			$result = mysqli_query($conexao, $sql);	
+			$result = mysqli_query($con, $sql);	
 			if(mysqli_num_rows($result) >0){	
 					while($res_1 = mysqli_fetch_assoc($result)){
 					$status = $res_1['status'];
