@@ -113,7 +113,7 @@
 
 
 		<?php
-if(isset($_POST['button'])){
+		if(isset($_POST['button'])){
 	$code =$_POST['code'];
     $password =$_POST['password'];
     

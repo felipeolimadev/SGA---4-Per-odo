@@ -9,9 +9,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
- <link href="img/fd.png" rel="shortcut icon" type="image/x-icon">
+ 	 <link href="img/fd.png" rel="shortcut icon" type="image/x-icon">
 
-    <title>SGA.: Página de Cadastro de Cursos</title>    
+    <title>SGA.: Página de Cadastro de Alunos</title>    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap-theme.min.css" rel="stylesheet">
     <link href="theme.css" rel="stylesheet">   
@@ -23,14 +23,14 @@
 
   <body role="document">
   	<?php
-  		include"menu_admin2.php";
+  		include_once("menu_admin2.php");
   	?>
 
     
     <div class="container theme-showcase" role="main"><br>
 
     	<?php
-  		include_once("cadastrar_novo_curso.php");
+  		include_once("cadastrar_aluno_novo.php");
   		?>
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -39,7 +39,9 @@
  
 	<br>
       
-	<?php require_once('rodape.php'); ?>
+   <?php require_once('rodape.php'); ?>   
+
+     
 
 
     <!-- Bootstrap core JavaScript

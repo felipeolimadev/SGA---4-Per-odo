@@ -23,7 +23,7 @@
 
   <body role="document">
   	<?php
-  		include"menu_admin2.php";
+  		include_once("menu_admin2.php");
   	?>
 
     
