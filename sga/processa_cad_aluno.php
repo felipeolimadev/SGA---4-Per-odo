@@ -1,11 +1,8 @@
 ﻿
  <?php
-        $servidor = "localhost";
-	$usuario = "root";
-	$senha = "root";
-	$dbname = "sga";
+        include "conexao.php";
         
-        $con = mysqli_connect($servidor, $usuario, $senha, $dbname);
+        
         $nome = $_POST['nome'];
         $matricula = $_POST['matricula'];
         $telefone = $_POST['telefone'];

@@ -29,8 +29,8 @@
 				<form method="POST" action="processa_cad_aluno.php">
 					<!--<label>NomeAluno</label>-->
 					<i class="fas fa-user-circle"></i>  Aluno:<input type="text" name="nome" placeholder="Digite o nome  completo" class="form-control">
-					 <i class="fas fa-graduation-cap"></i> Matricula:<input type="text" name="matricula" placeholder="Informe a  Matricula" class="form-control">
-					<i class="fas fa-phone"></i>  Telefone:<input type="text" name="telefone" placeholder="ex.: 33 3333-3333" class="form-control"><br>			
+					 <i class="fas fa-graduation-cap"></i> Matricula:<input type="text" name="matricula" placeholder="Informe a  Matricula" class="form-control" maxlength="8">
+					<i class="fas fa-phone"></i>  Telefone:<input type="text" name="telefone" placeholder="ex.: 33 3333-3333" class="form-control" maxlength="10"><br>			
 					
 														
 					<input type="submit" name="btnCadUsuario" value="Cadastrar" class="btn btn-success"><br>

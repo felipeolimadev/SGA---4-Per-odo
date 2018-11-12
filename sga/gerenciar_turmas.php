@@ -46,7 +46,9 @@
           <a class="navbar-brand"></a>
 
       </div>
-
+      <?php
+      include "tabela_turmas.php";
+      ?>
       <br><br>
 
       <div class="container theme-showcase" role="main">
@@ -73,8 +75,8 @@
                 <?php
               	include"../conexao.php";
 
-                $sql = 'SELECT * FROM turma,curso ORDER BY cod_turma';
-                $resultado = mysqli_query($con, $sql) ;
+                $sql = 'SELECT * FROM turma ORDER BY cod_turma';                
+                $resultado = mysqli_query($con, $sql) ;                
                 $linhas = mysqli_num_rows($resultado);  
 
                   ?>
@@ -91,7 +93,7 @@
                     <?=$dado['periodo'].'º Período'?>
                   </td>
                   <td>
-                    <?=$dado['nome']?>
+                    <?=$dado['cod_curso']?>
                   </td>
                   <td>
                     <?=$dado['ano']?>
@@ -101,7 +103,9 @@
                   </td>
                   <td>
                     <form method="POST" action="excluir_turma.php">
-                      <input type="button" name="cod_turma" value="<?=$dado['cod_turma']?>">Excluir</input>
+                      <input type="checkbox" name="cod_turma" value="<?=$dado['cod_turma']?>">Excluir<br>
+                      <input type="submit" value="Confirmar">
+                    </form>
                   </td>
                 </tr>
                 <?php endforeach; ?>

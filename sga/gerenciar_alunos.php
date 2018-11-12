@@ -72,7 +72,7 @@
             <tbody>
               <?php
               	
-                include"../conexao.php";               
+                include"conexao.php";               
 
                 $sql = 'SELECT * FROM aluno ORDER BY cod_aluno';
                 $resultado = mysqli_query($con, $sql) ;
@@ -94,6 +94,13 @@
                 <td>
                   <?=$dado['telefone']?>
                 </td>
+                <td>
+                  <form method="POST" action="excluir_aluno.php">
+                    <input type="checkbox" name="cod_aluno" value="<?=$dado['cod_aluno']?>">Excluir<br>
+                    <input type="submit" value="Confirmar">
+                  </form>
+                </td>
+
               </tr>
               <?php endforeach; ?>
 

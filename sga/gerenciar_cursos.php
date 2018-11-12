@@ -2,10 +2,9 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head> 
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
@@ -16,8 +15,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="bootstrap-theme.min.css" rel="stylesheet">
   <link href="theme.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
   <script src="js/ie-emulation-modes-warning.js"></script>
 
@@ -63,29 +61,35 @@
               </tr>
             </thead>
             <tbody>
-            <?php
+              <?php
               	
-                include"../conexao.php";
+                include"conexao.php";
 
                 $sql = 'SELECT * FROM curso ORDER BY cod_curso';
                 $resultado = mysqli_query($con, $sql) ;
                 $linhas = mysqli_num_rows($resultado);  
 
                   ?>
-                <tbody>
-                    <?php foreach($resultado as $dado) : ?>
-                    <tr>
-                        <td>
-                            <?=$dado['cod_curso']?>
-                        </td>
-                        <td>
-                            <?=$dado['nome']?>
-                        </td>
-                        <td>
-                            <?=$dado['sigla']?>
-                        </td>
-                    </tr>
-                    <?php endforeach; ?>
+            <tbody>
+              <?php foreach($resultado as $dado) : ?>
+              <tr>
+                <td>
+                  <?=$dado['cod_curso']?>
+                </td>
+                <td>
+                  <?=$dado['nome']?>
+                </td>
+                <td>
+                  <?=$dado['sigla']?>
+                </td>
+                <td>
+                  <form method="POST" action="excluir_curso.php">
+                    <input type="checkbox" name="cod_curso" value="<?=$dado['cod_curso']?>">Excluir<br>
+                    <input type="submit" value="Confirmar">
+                  </form>
+                </td>
+              </tr>
+              <?php endforeach; ?>
 
 
 
