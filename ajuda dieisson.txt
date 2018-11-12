@@ -1,0 +1,20 @@
+Tabelas: 
+aluno:
+	cod_aluno
+	matricula
+	nome
+	telefone
+
+aluno_turma:
+	cod_aluno
+	cod_turma
+
+turma:
+	ano
+	cod_curso
+	cod_turma
+	letra
+	periodo
+	semestre
+
+Eu queria retornar o "nome" do aluno que possui o "cod_aluno" cadastrado na tabela "aluno_turma" e depois retornar o "cod_turma" da tabela "aluno_turma" e comparar 

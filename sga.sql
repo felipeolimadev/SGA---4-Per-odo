@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 07-Nov-2018 às 19:39
+-- Generation Time: 12-Nov-2018 às 18:35
 -- Versão do servidor: 10.1.36-MariaDB
 -- versão do PHP: 7.2.11
 
@@ -77,8 +77,7 @@ CREATE TABLE `curso` (
 --
 
 INSERT INTO `curso` (`cod_curso`, `nome`, `sigla`) VALUES
-(1, 'Sistemas de Informacao', 'SI'),
-(2, 'Agronomia', 'AG');
+(1, 'Sistemas de Informacao', 'SI');
 
 -- --------------------------------------------------------
 
@@ -102,7 +101,7 @@ CREATE TABLE `login` (
 INSERT INTO `login` (`id`, `status`, `code`, `senha`, `nome`, `painel`) VALUES
 (11, 'Ativo', 'manutencao@ipca.br', 'manutencao', 'Manutenção de Sistemas', 'secretaria'),
 (12, 'Ativo', '1111549@edu.ipca.br', '1111549', 'Danilo Fernandes da Silva', 'aluno'),
-(15, 'Ativo', 'coordenacao@ipca.br', 'coordenacao', 'Felipe Lima', 'secretaria'),
+(15, 'Ativo', 'felipe', '123', 'Felipe Lima', 'secretaria'),
 (16, 'Ativo', 'professor@edu.ipca.br', 'educacao', 'Professor Regente de Turma', 'professor'),
 (17, 'Ativo', 'educacao@edu.ipca.br', 'educacao', 'Inst.de Pesquisa e Centro de Aval. de Software', 'secretaria');
 
@@ -126,7 +125,7 @@ CREATE TABLE `turma` (
 --
 
 INSERT INTO `turma` (`cod_turma`, `letra`, `periodo`, `cod_curso`, `ano`, `semestre`) VALUES
-(1, 'A', 2, 1, 2017, 4);
+(3, 'S', 1, 1, 2018, 1);
 
 --
 -- Indexes for dumped tables
@@ -176,7 +175,7 @@ ALTER TABLE `administrar`
 -- AUTO_INCREMENT for table `aluno`
 --
 ALTER TABLE `aluno`
-  MODIFY `cod_aluno` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_aluno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `curso`
@@ -194,7 +193,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `turma`
 --
 ALTER TABLE `turma`
-  MODIFY `cod_turma` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `cod_turma` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

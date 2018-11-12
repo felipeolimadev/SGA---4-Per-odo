@@ -25,10 +25,10 @@
 						unset($_SESSION['msg']);
 					}
 				?>
-				<form method="POST" action="processa_cada_curso.php">
+				<form method="POST" action="processa_cad_curso.php">
 					<!--<label>NomeAluno</label>-->
-					 <i class="fas fa-graduation-cap"></i>  Curso:<input type="text" name="nome_aluno" placeholder="Digite o nome  do curso" class="form-control">
-				<i class="fas fa-sign-in-alt"></i> Sigla:<input type="text" name="nome_aluno" placeholder="Sigla" class="form-control"><br>
+					 <i class="fas fa-graduation-cap"></i>  Curso:<input type="text" name="nome" placeholder="Digite o nome  do curso" class="form-control">
+				<i class="fas fa-sign-in-alt"></i> Sigla:<input type="text" name="sigla" placeholder="Sigla" class="form-control"><br>
 					
 														
 					<input type="submit" name="btnCadUsuario" value="Cadastrar" class="btn btn-success">
