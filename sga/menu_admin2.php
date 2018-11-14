@@ -30,7 +30,7 @@
     <li class="dropdown-header"> <i class="fas fa-users"></i> Alunos</li>
     <li><a href="cadastro_aluno.php">Cadastro de alunos</a></li>
     <li><a href="gerenciar_alunos.php">Gerenciar Alunos</a></li>
-    <li><a href="aluno.php">buscar Alunos</a></li>
+    <li><a href="aluno.php">Buscar Alunos</a></li>
     <li role="separator" class="divider"></li>
     <li class="dropdown-header"> <i class="fas fa-graduation-cap"></i> Cursos</li>
     <li><a href="cadastro_curso.php">Cadastro de cursos</a></li>

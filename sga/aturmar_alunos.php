@@ -93,7 +93,7 @@
 
 
   </div>
-  </main>
+  
 
 
 
@@ -103,7 +103,49 @@
 
 
   </div>
-  </main>
+  </main><div class="container theme-showcase" role="main">
+
+
+    <div class="page-header">
+        <h1>Turmas e Alunos </h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-dark">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Nome</th>
+                        <th>ID do Aluno</th>
+                        <th>Código da Turma</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                      <?php
+                        include"conexao.php";
+                        $sql = 'SELECT * FROM aluno, turma WHERE aluno.cod_turma = turma.cod_turma ORDER BY aluno.nome';                
+                        $resultado = mysqli_query($con, $sql) ;                
+                        $linhas = mysqli_num_rows($resultado);  
+                      ?>
+                <tbody>
+                    <?php foreach($resultado as $dado) : ?>
+                    <tr class="active">
+                        <td>
+                            <?=$dado['nome']?>
+                        </td>
+                        <td>
+                            <?=$dado['cod_aluno']?>                            
+                        </td>
+                        
+                        <td>
+                            <?=$dado['cod_turma']?>
+                        </td>
+                        
+                    </tr>
+                    <?php endforeach; ?>
+        </div>
+    </div>
+</div>
 
 
   <!-- Bootstrap core JavaScript

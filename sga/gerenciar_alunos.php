@@ -20,7 +20,19 @@
     crossorigin="anonymous">
   <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
   <script src="js/ie-emulation-modes-warning.js"></script>
-
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script>
+  $('#filtro-nome').keyup(function() {
+    var nomeFiltro = $(this).val().toLowerCase();
+    console.log(nomeFiltro);
+    $('table tbody').find('tr').each(function() {
+        var conteudoCelula = $(this).find('td:first').text();
+        console.log(conteudoCelula);
+        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
+        $(this).css('display', corresponde ? '' : 'none');
+    });
+});
+  </script>
 </head>
 
 <body role="document">
@@ -44,13 +56,6 @@
     </div>
 
     <br><br>
-    <!--<?php
-      //include_once("menu_admin.php");
-      //$sql = 'SELECT * FROM login ORDER BY "id"';
-    //  $resultado=mysqli_query($con, $sql);
-    //  $linhas=mysqli_num_rows($resultado);     
-
-    ?>   -->
     <div class="container theme-showcase" role="main">
 
 
@@ -59,17 +64,17 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <table class="table">
+          <table class="table lista">
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Nome</th>
+                <th><div>Nome</div><div><input id="filtro-nome"/></div></th>                
                 <th>Matricula</th>
                 <th>Telefone</th>
                 <th>Ações</th>
               </tr>
             </thead>
-            <tbody>
+            
               <?php
               	
                 include"conexao.php";               
@@ -103,7 +108,8 @@
 
               </tr>
               <?php endforeach; ?>
-
+            </tbody>
+        </table>
 
 
 

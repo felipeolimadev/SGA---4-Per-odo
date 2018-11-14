@@ -51,9 +51,9 @@
 				<?php
                                             include"conexao.php";
 
-                                            $sql = 'SELECT * FROM curso ORDER BY nome';
+                                            $sql = 'SELECT * FROM curso ORDER BY cod_curso';
                                             $resultado = mysqli_query($con, $sql) ;
-                                            $linhas = mysqli_num_rows($resultado); 
+                                            
                                         
                                         
                                         ?>
