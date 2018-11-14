@@ -10,6 +10,9 @@
           <a href="index.php">Home</a>
         </li>    
         <li>
+          <a href="relatorio.php">Relatório</a>
+        </li>
+        <li>
           <a href="#!">Alunos</a>
           <ul class="nav-dropdown">
             <li>
