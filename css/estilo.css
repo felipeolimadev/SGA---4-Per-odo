@@ -1,93 +1,89 @@
-*{
-	box-sizing:border-box;
-	margin:0;
-	padding:0;
-overflow: hidden;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-
-body{
-background:#fff;	
+body {
+    background: #fff;
 }
 
-#logo{
-width: 200px;
-height: 100px;
-margin: auto;		
+#logo {
+    width: 200px;
+    height: 100px;
+    margin: auto;
 }
 
-#logo img{
-width: 200px;
-height: 100px;	
+#logo img {
+    width: 200px;
+    height: 100px;
 }
 
-#caixa-login{
-background: #ccc;
+#caixa-login {
+    background: #ccc;
     width: 450px;
     height: 663px;
     float: right;
     padding: 42px 0 0 17px;
     margin: -659px 0 0 104px;
     position: relative;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-
-}
-#caixa-login table{
-	font:15px Arial, Arial, Helvetica, sans-serif;
-	color:#666;
-	margin: 40px 10px 10px 10px;
-}
-#caixa-login h1{
-	
-	font:15px Arial, Arial, Helvetica, sans-serif;
-	color: #00F;
-	margin: 10px 0 0 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
-#caixa-login input{
-	font:15px Arial, Arial, Helvetica, sans-serif;
-	color: #00F;
-	heigth: 25px;
-	padding:10px;
-	width:400px;
-	border: 1px solid #CCC;
-	margin-top: 30px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	
+#caixa-login table {
+    font: 15px Arial, Arial, Helvetica, sans-serif;
+    color: #666;
+    margin: 40px 10px 10px 10px;
 }
 
-#caixa-login .input{
-	font:15px Arial, Arial, Helvetica, sans-serif;
-	color:#FFF;
-	heigth: 40px;
-	padding:10px;
-	background: #00F;
-	cursor:pointer;
-	width:80px;
-	border: 1px solid #CCC;
-	
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	
+#caixa-login h1 {
+    font: 15px Arial, Arial, Helvetica, sans-serif;
+    color: #00F;
+    margin: 10px 0 0 0;
 }
-#caixa-login h2{
-	font:15px Arial, Arial, Helvetica, sans-serif;
-	color:#FFF;
-	background:#00F;
-	text-align:center;
-	padding:5px;
-	float: left;
-	margin: 28px 0 10px 10px;
-	border: 1px solid #CCC;
-		
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	
+
+#caixa-login input {
+    font: 15px Arial, Arial, Helvetica, sans-serif;
+    color: #00F;
+    heigth: 25px;
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #CCC;
+    margin-top: 30px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
+
+#caixa-login .input {
+    font: 15px Arial, Arial, Helvetica, sans-serif;
+    color: #FFF;
+    heigth: 40px;
+    padding: 10px;
+    background: #00F;
+    cursor: pointer;
+    width: 80px;
+    border: 1px solid #CCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#caixa-login h2 {
+    font: 15px Arial, Arial, Helvetica, sans-serif;
+    color: #FFF;
+    background: #00F;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    margin: 28px 0 10px 10px;
+    border: 1px solid #CCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
 .slider-wrapper {
     display: block;
     width: 100%;
@@ -100,59 +96,232 @@ background: #ccc;
 
 .slider-wrapper .slide-top,
 .slider-wrapper .slide-bottom {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .slide-top {
-  background: url('http://redes.moderna.com.br/wp-content/uploads/2016/06/post-tonia.png') center center;
-  background-size: cover;
+    background: url('http://redes.moderna.com.br/wp-content/uploads/2016/06/post-tonia.png') center center;
+    background-size: cover;
 }
+
 .slide-bottom {
-  background: url('http://sistema.unipac.br/ad/assets/css/background.jpg') center center;
-  background-size: cover;
-  
-  -webkit-animation-iteration-count: infinite;
+    background: url('http://sistema.unipac.br/ad/assets/css/background.jpg') center center;
+    background-size: cover;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-name: fadeImages;
-          animation-name: fadeImages;
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+    -webkit-animation-name: fadeImages;
+    animation-name: fadeImages;
 }
 
 @-webkit-keyframes fadeImages {
-  0% {
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
-  
-  50% {
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
-
-  100% {
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    50% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
 }
-@keyframes fadeImages {
-  0% {
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
-  
-  50% {
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
 
-  100% {
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
+@keyframes fadeImages {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    50% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+.navigation {
+    height: 70px;
+    background: #262626;
+}
+
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+.brand a,
+.brand a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: #262626;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:visited:hover {
+    background: #2581DC;
+    color: #ffffff;
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: ' ▾';
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Mobile navigation */
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #262626;
+    height: 70px;
+    width: 70px;
+}
+
+@media only screen and (max-width: 798px) {
+    .nav-mobile {
+        display: block;
+    }
+    nav {
+        width: 100%;
+        padding: 70px 0 15px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        float: none;
+    }
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+    }
+    nav ul li ul li a {
+        padding-left: 30px;
+    }
+    .nav-dropdown {
+        position: static;
+    }
+}
+
+@media screen and (min-width: 799px) {
+    .nav-list {
+        display: block !important;
+    }
+}
+
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
 }

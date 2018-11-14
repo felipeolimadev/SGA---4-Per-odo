@@ -1,7 +1,8 @@
-.topo{
-    background-color:#00a4ec;
+@charset "UTF-8";
+.topo {
+    background-color: #00a4ec;
     text-align: center;
-    color:#000000;
+    color: #000000;
     font-weight: bold;
     font-size: 30px;
     height: 100px;
@@ -9,72 +10,64 @@
 }
 
 .Geral {
-	width: 150px;
-	height: 100px;
-	font-size: 18px;
-	color: #FFF;
-
-
+    width: 150px;
+    height: 100px;
+    font-size: 18px;
+    color: #FFF;
 }
-.Geral a{
-	font-size: 15px;
-	
+
+.Geral a {
+    font-size: 15px;
 }
-#painel{
-	margin:0 auto;
-	
+
+#painel {
+    margin: 0 auto;
 }
 
 #img {
     float: left;
-	margin:10px;
+    margin: 10px;
     width: 190px;
     height: 100px;
-    
-    cursor: hand;
-    background-image:url url( url(file:///C|/wamp/www/projeto%20unipac/css/img/logo%20unipac_cap.png));
+    background-image: url(url(file:///C|/wamp/www/projeto%20unipac/css/img/logo%20unipac_cap.png));
     background-repeat: no-repeat;
 }
+
 #superior {
     float: left;
     width: 1005px;
     height: 60px;
 }
+
 #inferior {
     float: left;
     width: 1005px;
     height: 60px;
-
 }
 
-
-
-.img{
-    float: left;   
-    
+.img {
+    float: left;
 }
 
-img{
+img {
     height: 30px;
     width: 250px;
     height: 250px;
-     
 }
 
-p{
+p {
     text-indent: 2em;
     text-align: justify;
 }
 
-pi{
+pi {
     text-align: justify;
     text-indent: 3em;
     font-size: 16px;
 }
 
-.Corpo{
-    background-color:#ffffff;
-   
+.Corpo {
+    background-color: #ffffff;
     font-weight: bold;
     font-size: 15px;
     height: 600px;
@@ -82,18 +75,16 @@ pi{
     border-right: solid 1px #c0d619;
 }
 
-.body{
-	background-image:url(img/fundounipac2.jpg);
-	background-attachment:fixed;
-	background-size:100%;
-	background-repeat:no-repeat;
-	background-color:#000;
-
+.body {
+    background-image: url(img/fundounipac2.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000;
 }
 
-
-.footer{
-    background-color:#00a4ec;
+.footer {
+    background-color: #00a4ec;
     background-image: url(marca.png);
     background-repeat: no-repeat;
     text-align: center;
@@ -104,23 +95,20 @@ pi{
     border: solid 1px #c0d619;
     border-top: 0px;
     width: 100%;
- 
 }
 
-
-.Menu{
-    background-color:#0b4271;
-    color:#000000;
+.Menu {
+    background-color: #0b4271;
+    color: #000000;
     font-weight: bold;
     font-size: 30px;
     height: 30px;
     border: solid 1px #2BA470;
 }
 
-
-.ItemMenu{
-    background-color:#0b4271;
-    color:#000000;
+.ItemMenu {
+    background-color: #0b4271;
+    color: #000000;
     font-weight: bold;
     font-size: 15px;
     height: 85%;
@@ -129,13 +117,192 @@ pi{
     padding-left: 5px;
     border: solid 2px #637858;
     width: 20%;
-	
 }
 
-iframe{
+iframe {
     width: 99.6%;
     margin-left: 1px;
     border: 0;
     background-color: #ffffff;
     height: 100%;
+}
+
+.navigation {
+    height: 70px;
+    background: #262626;
+    margin-top: -63px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+.brand a,
+.brand a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: #262626;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:visited:hover {
+    background: #2581DC;
+    color: #ffffff;
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: ' ▾';
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Mobile navigation */
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #262626;
+    height: 70px;
+    width: 70px;
+}
+
+@media only screen and (max-width: 798px) {
+    .nav-mobile {
+        display: block;
+    }
+    nav {
+        width: 100%;
+        padding: 70px 0 15px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        float: none;
+    }
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+    }
+    nav ul li ul li a {
+        padding-left: 30px;
+    }
+    .nav-dropdown {
+        position: static;
+    }
+}
+
+@media screen and (min-width: 799px) {
+    .nav-list {
+        display: block !important;
+    }
+}
+
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
 }
