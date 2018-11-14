@@ -8,6 +8,7 @@
 ?>
 
 <body role="document">
+
   <?php
   		include_once("menu_admin2.php");
   	?>
@@ -36,13 +37,13 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <table id="tabela"  class="table lista">
+          <table id="lista"  class="table lista">
             <thead>
               <tr>
                 <th>ID</th>
-                <th><div>Nome</div><input type="text" id="txtColuna1"/></th>                
-                <th><div>Matricula</div><input type="text" id="txtColuna2"/></th>
-                <th><div>Telefone</div><input type="text" id="txtColuna3"/></th>
+                <th><div>Nome</div><div></th>                
+                <th><div>Matricula</div></th>
+                <th><div>Telefone</div></th>
                 <th>Ações</th>
               </tr>
             </thead>
@@ -51,7 +52,7 @@
               	
                 include"conexao.php";               
 
-                $sql = 'SELECT * FROM aluno ORDER BY cod_aluno';
+                $sql = 'SELECT * FROM aluno ORDER BY nome';
                 $resultado = mysqli_query($con, $sql) ;
                 $linhas = mysqli_num_rows($resultado);  
 
@@ -72,9 +73,10 @@
                   <?=$dado['telefone']?>
                 </td>
                 <td>
-                  <form method="POST" action="excluir_aluno.php">
-                    <input type="checkbox" name="cod_aluno" value="<?=$dado['cod_aluno']?>">Excluir<br>
-                    <input type="submit" value="Confirmar">
+                  <form method="POST" action="editar_e_excluir.php">
+                    <input type="checkbox" name="cod_aluno" value="<?=$dado['cod_aluno']?>">Selecionar<br>
+                    <input type="submit" name="editar" value="Editar">
+                    <input type="submit" name="excluir" value="Excluir">
                   </form>
                 </td>
 
@@ -100,26 +102,7 @@
       <script src="js/docs.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <script src="/js/ie10-viewport-bug-workaround.js"></script>
-      <script type="text/javascript">  
-      $(function(){
-	$("#tabela input").keyup(function(){		
-
-		var index = $(this).parent().index();
-		var nth = "#tabela td:nth-child("+(index+1).toString()+")";
-		var valor = $(this).val().toUpperCase();
-		$("#tabela tbody tr").show();
-		$(nth).each(function(){
-			if($(this).text().toUpperCase().indexOf(valor) < 0){
-				$(this).parent().hide();
-			}
-		});
-	});
-
-	$("#tabela input").blur(function(){
-		$(this).val("");
-	});	
-});
-      </script>
+    
 </body>
 
 </html>

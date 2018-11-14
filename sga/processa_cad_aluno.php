@@ -22,4 +22,4 @@
 ?>
 
 Cadastro Efetuado, Aguarde, você está sendo redirecionado para pagina Inicial!
-<meta http-equiv='refresh' content='3; index.php'/>
+<meta http-equiv='refresh' content='3; gerenciar_alunos.php'/>
